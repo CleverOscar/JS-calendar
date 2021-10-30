@@ -1,12 +1,14 @@
 import React, {useState} from 'react';
 
-var today = new Date();
-
 function CurrentDate(){
 
-    const [date, setDate] = useState(today.getDate());
-    const [month, setMonth] = useState(today.getMonth());
-    const [year, setYear] = useState(today.getUTCFullYear());
+    
+    let today = new Date();
+
+    const [date] = useState(today.getDate());
+    const [month] = useState(today.getMonth() + 1);
+    const [year] = useState(today.getUTCFullYear());
+
 
     return(
         <div>

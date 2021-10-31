@@ -2,17 +2,24 @@ import React, {useState} from 'react';
 
 
 function CurrentMonth(){
+    let months = ["January","February","March","April","May","June","July",
+                "August","September","October","November","December"];
 
-    var dt = new Date();
-    var month = dt.getMonth();
-    var year = dt.getFullYear();
-    let daysInMonth = new Date(year, month, 0).getDate();
+    let today = new Date();
 
-    return(
-        <div>
-            Month: {console.log(daysInMonth)}
-        </div>
-    )
+
+    let month = today.getMonth();
+
+    for(let i = 0; i < months.length; i++){
+                        if(month === i){
+                            // return months[month]
+
+                        return(
+                            <div>
+                                Month: {months[month]}
+                            </div>
+                        )
+    }}
 }
 
 export default CurrentMonth; 

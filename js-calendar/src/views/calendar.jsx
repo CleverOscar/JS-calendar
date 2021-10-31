@@ -7,11 +7,9 @@ import CurrentMonth from './helpers/getMonth';
 
 function Calendar(){
     return(
-        <div>
-            Calendar Component 
+        <div className="month-component">
+            <CurrentMonth />   
             <CurrentDate />
-
-            <CurrentMonth />
         </div>
     )
 }

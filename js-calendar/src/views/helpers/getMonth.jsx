@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 
 function CurrentMonth(){
@@ -11,14 +11,14 @@ function CurrentMonth(){
     let month = today.getMonth();
 
     for(let i = 0; i < months.length; i++){
-                        if(month === i){
-                            // return months[month]
+        if(month === i){
+            // return months[month]
 
-                        return(
-                            <div>
-                                Month: {months[month]}
-                            </div>
-                        )
+        return(
+            <div className="current-month">
+                <h1>{months[month]}</h1>
+            </div>
+        )
     }}
 }
 

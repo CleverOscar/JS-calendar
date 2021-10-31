@@ -13,11 +13,9 @@ function CurrentDate(){
 
     return(
         <div>
-            <ul>
-                <li> Current day: {date} </li>
-                <li> Current Month: {month} </li>
-                <li> Current Year: {year} </li>
-            </ul>
+            <p> 
+                {month} / {date} / {year}
+            </p>
         </div>
     )
 }
